@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosEFWithOData", "CosmosEFWithOData\CosmosEFWithOData.csproj", "{EDAE1342-C1A0-4254-B8F0-09E3A09C210C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDAE1342-C1A0-4254-B8F0-09E3A09C210C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAE1342-C1A0-4254-B8F0-09E3A09C210C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAE1342-C1A0-4254-B8F0-09E3A09C210C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAE1342-C1A0-4254-B8F0-09E3A09C210C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E626AA8A-0DF4-4A3B-AC98-6D4BAC94DEA1}
+	EndGlobalSection
+EndGlobal
