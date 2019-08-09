@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using CosmosEFWithOData.Brokers;
 using CosmosEFWithOData.Models;
 using Microsoft.AspNet.OData;
+using System.Linq;
+using System;
 
 namespace CosmosEFWithOData.Controllers
 {
@@ -12,19 +14,19 @@ namespace CosmosEFWithOData.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
-        private readonly StudentsDbContext _context;
+        private readonly StudentsDbContext context;
 
         public StudentsController(StudentsDbContext context)
         {
-            _context = context;
+            this.context = context;
         }
 
         // GET: api/Students
         [HttpGet]
         [EnableQuery()]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
+        public ActionResult<IQueryable<Student>> GetStudents()
         {
-            return await _context.Students.ToListAsync();
+            return context.Students;
         }
     }
 }
